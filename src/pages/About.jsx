@@ -10,15 +10,12 @@ import {
   FaCogs,
   FaArrowRight,
   FaCheckCircle,
+  FaLinkedinIn,
+  FaQuoteLeft,
 } from 'react-icons/fa';
 import SectionHeading from '../components/SectionHeading';
 
 const team = [
-  {
-    name: 'Ramesh Agrawal',
-    role: 'Founder & Director',
-    photo: 'https://images.pexels.com/photos/34392775/pexels-photo-34392775.jpeg?auto=compress&cs=tinysrgb&h=400&w=400',
-  },
   {
     name: 'Priya Sharma',
     role: 'Head of Operations',
@@ -87,10 +84,11 @@ export default function About() {
               </h2>
               <div className="space-y-4 text-slate-600 leading-relaxed">
                 <p>
-                  Founded in 2009 by Ramesh Agrawal, Brick Machines Production
-                  started as a small workshop in [Your City] with a simple
-                  mission: to make quality brick-making machines accessible and
-                  affordable for Indian builders and rural entrepreneurs.
+                  Founded in 2009 by MH Qadri, Brick Machines Production
+                  started as a small workshop in Sambhal, Uttar Pradesh with a
+                  simple mission: to make quality brick-making machines
+                  accessible and affordable for Indian builders and rural
+                  entrepreneurs.
                 </p>
                 <p>
                   Over the past 15+ years, we've grown from a local manufacturer
@@ -134,8 +132,105 @@ export default function About() {
         </div>
       </section>
 
-      {/* Mission & Vision */}
+      {/* Founder & Owner */}
       <section className="py-20 bg-slate-50">
+        <div className="container-page">
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="lg:col-span-2"
+            >
+              <div className="relative">
+                <div className="absolute -inset-3 bg-gradient-to-tr from-brick-700 to-amber-500 rounded-3xl blur opacity-20" />
+                <img
+                  src="https://images.pexels.com/photos/37894130/pexels-photo-37894130.jpeg?auto=compress&cs=tinysrgb&h=700&w=600"
+                  alt="MH Qadri - Founder & Owner"
+                  className="relative rounded-2xl object-cover h-[460px] w-full shadow-xl"
+                />
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="lg:col-span-3"
+            >
+              <span className="text-brick-600 font-semibold text-sm uppercase tracking-wider mb-3 block">
+                Founder & Owner
+              </span>
+              <h2 className="font-heading font-bold text-3xl sm:text-4xl text-slate-900 mb-2 leading-tight">
+                MH Qadri
+              </h2>
+              <p className="text-amber-600 font-semibold mb-5">
+                Founder &amp; Director, HN CRAFT INDIA
+              </p>
+
+              <FaQuoteLeft className="text-brick-200 text-3xl mb-4" />
+              <p className="text-slate-600 leading-relaxed mb-4 italic">
+                "When I started this company, I had one dream — to build
+                machines that would empower every Indian entrepreneur to build
+                their own future. Fifteen years later, that dream is alive in
+                every brick our machines produce across this great nation."
+              </p>
+
+              <div className="space-y-3 text-slate-600 leading-relaxed mb-6">
+                <p>
+                  MH Qadri is a visionary entrepreneur and engineer with over 15
+                  years of experience in the brick-making machinery industry.
+                  Under his leadership, HN CRAFT INDIA has grown from a small
+                  workshop in Sambhal, Uttar Pradesh into a trusted
+                  manufacturer serving customers across 20+ states in India.
+                </p>
+                <p>
+                  His hands-on approach to machine design, deep understanding of
+                  Indian manufacturing conditions, and unwavering commitment to
+                  customer success have made him a respected figure in the
+                  industry. He personally oversees quality control and believes
+                  that every machine leaving the factory should perform
+                  flawlessly for years.
+                </p>
+              </div>
+
+              <div className="grid grid-cols-3 gap-4 mb-6">
+                {[
+                  { number: '15+', label: 'Years Experience' },
+                  { number: '500+', label: 'Machines Delivered' },
+                  { number: '20+', label: 'States Served' },
+                ].map((stat) => (
+                  <div
+                    key={stat.label}
+                    className="bg-white rounded-xl shadow-sm p-4 text-center"
+                  >
+                    <div className="font-heading font-bold text-2xl text-brick-700">
+                      {stat.number}
+                    </div>
+                    <div className="text-xs text-slate-500 mt-1">
+                      {stat.label}
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm font-semibold text-brick-700 hover:text-brick-800"
+              >
+                <FaLinkedinIn /> Connect on LinkedIn
+              </a>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Mission & Vision */}
+      <section className="py-20 bg-white">
         <div className="container-page">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <motion.div
@@ -184,7 +279,7 @@ export default function About() {
       </section>
 
       {/* Core Values */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-slate-50">
         <div className="container-page">
           <SectionHeading subtitle="What Drives Us" title="Our Core Values" />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -211,10 +306,10 @@ export default function About() {
       </section>
 
       {/* Team */}
-      <section className="py-20 bg-slate-50">
+      <section className="py-20 bg-white">
         <div className="container-page">
           <SectionHeading subtitle="Meet the Team" title="The People Behind Hn Craft India" />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {team.map((member, index) => (
               <motion.div
                 key={member.name}
