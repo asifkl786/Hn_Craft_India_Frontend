@@ -8,6 +8,7 @@ import {
   FaPhoneAlt,
   FaEnvelope,
   FaMapMarkerAlt,
+  FaBuilding,
 } from 'react-icons/fa';
 
 const quickLinks = [
@@ -146,6 +147,13 @@ export default function Footer() {
                 >
                   info@hncraftindia.com
                 </a>
+              </li>
+              <li className="flex items-start gap-3">
+                <FaBuilding className="text-brick-400 mt-1 flex-shrink-0" />
+                <span className="text-sm text-slate-400">
+                  <span className="text-slate-500">GSTIN:</span>{' '}
+                  <span className="text-white font-semibold tracking-wide">09AXMPK1223A2ZW</span>
+                </span>
               </li>
             </ul>
           </div>
