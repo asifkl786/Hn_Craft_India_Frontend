@@ -1,13 +1,17 @@
 import { FaWhatsapp } from 'react-icons/fa';
 
+const whatsappUrl =
+  'https://wa.me/919456453983?text=Hello%20HN%20Craft%20India,%20I%20am%20interested%20in%20your%20brick%20machines.';
+
 export default function WhatsAppButton() {
   return (
     <a
-      href="https://wa.me/91XXXXXXXXXX?text=Hello%20Hn%20Craft%20India,%20I%20am%20interested%20in%20your%20brick%20machines."
+      href={whatsappUrl}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="Chat on WhatsApp"
-      className="fixed bottom-6 right-6 z-40 group"
+      aria-label="Chat with HN Craft India on WhatsApp"
+      title="Chat with HN Craft India on WhatsApp"
+      className="fixed bottom-20 right-6 z-40 group"
     >
       <div className="relative">
         <span className="absolute inset-0 rounded-full bg-green-500 animate-pulse-ring" />
