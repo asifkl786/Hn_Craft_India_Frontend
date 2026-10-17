@@ -146,7 +146,7 @@ export default function About() {
               <div className="relative">
                 <div className="absolute -inset-3 bg-gradient-to-tr from-brick-700 to-amber-500 rounded-3xl blur opacity-20" />
                 <img
-                  src="https://images.pexels.com/photos/37894130/pexels-photo-37894130.jpeg?auto=compress&cs=tinysrgb&h=700&w=600"
+                  src="/images/MH_QADRI.jpeg"
                   alt="MH Qadri - Founder & Owner"
                   className="relative rounded-2xl object-cover h-[460px] w-full shadow-xl"
                 />
