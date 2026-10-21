@@ -39,7 +39,7 @@ const contactInfo = [
     icon: FaMapMarkerAlt,
     label: 'Location',
     value: 'Hyatnagar, Sambhal, Uttar Pradesh 244303, India',
-    link: 'https://maps.google.com',
+    link: 'https://www.google.com/maps/search/?api=1&query=Hyatnagar%2C+Sambhal%2C+Uttar+Pradesh+244303%2C+India',
     color: 'bg-slate-700',
   },
 ];
@@ -116,7 +116,7 @@ export default function Contact() {
               <div className="card overflow-hidden h-80">
                 <iframe
                   title="Our Location"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.83923192776!2d76.81306785!3d28.6448097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1700000000000"
+                  src="https://www.google.com/maps?q=Hyatnagar,+Sambhal,+Uttar+Pradesh+244303,+India&output=embed"
                   className="w-full h-full border-0"
                   allowFullScreen
                   loading="lazy"
