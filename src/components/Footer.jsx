@@ -125,9 +125,9 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <FaMapMarkerAlt className="text-brick-400 mt-1 flex-shrink-0" />
                 <span className="text-sm text-slate-400">
-                  Behjoi Road , Village Mugaffar Pur,
+                  Hyatnagar,
                   <br />
-                  [Sambhal Uttar Pradesh - 244303], India 
+                  Sambhal, Uttar Pradesh - 244303, India
                 </span>
               </li>
               <li className="flex items-center gap-3">

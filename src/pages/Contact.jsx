@@ -38,7 +38,7 @@ const contactInfo = [
   {
     icon: FaMapMarkerAlt,
     label: 'Location',
-    value: 'Behjoi Road Village Mugaffar Pur, Industrial Area, [SAMBHAL Uttar Pradesh 244303], India',
+    value: 'Hyatnagar, Sambhal, Uttar Pradesh 244303, India',
     link: 'https://maps.google.com',
     color: 'bg-slate-700',
   },
