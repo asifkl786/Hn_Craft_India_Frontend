@@ -65,7 +65,9 @@ export default function ProductCard({ product, index = 0 }) {
 
         <div className="mt-auto flex items-center justify-between pt-4 border-t border-slate-100">
           <div>
-            <span className="text-xs text-slate-400 block">Starting at</span>
+            <span className="text-xs text-slate-400 block">
+              {product.price === 'Price on Request' ? 'Pricing' : 'Starting at'}
+            </span>
             <span className="font-heading font-bold text-xl text-brick-700">
               {product.price}
             </span>
