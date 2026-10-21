@@ -73,6 +73,23 @@ export const products = [
   },
   {
     id: 7,
+    name: 'Clay Mixing Machine',
+    category: 'Industrial Equipment',
+    price: 'Price on Request',
+    image: '/images/clayMixingMachine.jpeg',
+    images: [
+      '/images/clayMixingMachine.jpeg',
+      '/images/clayMixingMachine2.jpeg',
+      '/images/clayMixingMachine3.jpeg',
+    ],
+    description: 'Heavy-duty clay mixing machine designed to prepare consistent material mixes for brick and construction production.',
+    features: ['Heavy-duty Construction', 'Consistent Mixing', 'Industrial Use', 'Easy Material Loading'],
+    badge: 'New Addition',
+    capacity: 'On request',
+    power: 'As required',
+  },
+  {
+    id: 8,
     name: 'Bore Cap Mould Set',
     category: 'Industrial Equipment',
     price: 'Price on Request',
@@ -84,7 +101,7 @@ export const products = [
     power: 'No Power Required',
   },
   {
-    id: 8,
+    id: 9,
     name: 'Bore Cap Cover Plates',
     category: 'Industrial Equipment',
     price: 'Price on Request',
@@ -96,7 +113,7 @@ export const products = [
     power: 'No Power Required',
   },
   {
-    id: 9,
+    id: 10,
     name: 'Coal Crusher Machine',
     category: 'Industrial Equipment',
     price: 'Price on Request',
@@ -108,7 +125,7 @@ export const products = [
     power: 'As required',
   },
   {
-    id: 10,
+    id: 11,
     name: 'High Draft Fan',
     category: 'Industrial Equipment',
     price: 'Price on Request',

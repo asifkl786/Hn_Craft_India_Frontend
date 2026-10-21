@@ -12,12 +12,34 @@ export default function ProductCard({ product, index = 0 }) {
       className="card group flex flex-col"
     >
       <div className="relative overflow-hidden h-56">
-        <img
-          src={product.image}
-          alt={product.name}
-          loading="lazy"
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-        />
+        {product.images?.length === 3 ? (
+          <div className="grid grid-cols-3 gap-1 h-full bg-slate-100">
+            <img
+              src={product.images[0]}
+              alt={product.name}
+              loading="lazy"
+              className="w-full h-full object-cover col-span-2 group-hover:scale-105 transition-transform duration-500"
+            />
+            <div className="grid grid-rows-2 gap-1">
+              {product.images.slice(1).map((image) => (
+                <img
+                  key={image}
+                  src={image}
+                  alt={product.name}
+                  loading="lazy"
+                  className="w-full h-full object-cover"
+                />
+              ))}
+            </div>
+          </div>
+        ) : (
+          <img
+            src={product.image}
+            alt={product.name}
+            loading="lazy"
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          />
+        )}
         {product.badge && (
           <span className="absolute top-3 left-3 bg-amber-500 text-slate-900 text-xs font-bold px-3 py-1 rounded-full shadow-md">
             {product.badge}
