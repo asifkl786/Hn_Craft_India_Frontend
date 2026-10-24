@@ -23,7 +23,7 @@ const quickLinks = [
 ];
 
 const socialLinks = [
-  { icon: FaFacebookF, url: 'https://facebook.com', label: 'Facebook' },
+  { icon: FaFacebookF, url: 'https://www.facebook.com/profile.php?id=61595672466163', label: 'Facebook' },
   { icon: FaInstagram, url: 'https://instagram.com', label: 'Instagram' },
   { icon: FaYoutube, url: 'https://youtube.com', label: 'YouTube' },
   { icon: FaLinkedinIn, url: 'https://linkedin.com', label: 'LinkedIn' },

@@ -45,7 +45,7 @@ const contactInfo = [
 ];
 
 const socialLinks = [
-  { icon: FaFacebookF, url: 'https://facebook.com', label: 'Facebook', color: 'hover:bg-blue-600' },
+  { icon: FaFacebookF, url: 'https://www.facebook.com/profile.php?id=61595672466163', label: 'Facebook', color: 'hover:bg-blue-600' },
   { icon: FaInstagram, url: 'https://instagram.com', label: 'Instagram', color: 'hover:bg-pink-600' },
   { icon: FaYoutube, url: 'https://youtube.com', label: 'YouTube', color: 'hover:bg-red-600' },
   { icon: FaLinkedinIn, url: 'https://linkedin.com', label: 'LinkedIn', color: 'hover:bg-blue-700' },
