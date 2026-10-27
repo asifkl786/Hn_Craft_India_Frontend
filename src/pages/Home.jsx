@@ -98,7 +98,7 @@ export default function Home() {
             title="Featured Brick-Making Machines"
           />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {products.slice(0, 3).map((product, index) => (
+            {products.map((product, index) => (
               <ProductCard key={product.id} product={product} index={index} />
             ))}
           </div>
