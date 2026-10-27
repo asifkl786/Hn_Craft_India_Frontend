@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { FaArrowRight, FaCheckCircle } from 'react-icons/fa';
 
 export default function ProductCard({ product, index = 0 }) {
   return (
@@ -9,37 +8,23 @@ export default function ProductCard({ product, index = 0 }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.4, delay: index * 0.1 }}
-      className="card group flex flex-col"
+      className="card group overflow-hidden"
     >
-      <div className="relative overflow-hidden h-56">
-        {product.images?.length === 3 ? (
-          <div className="grid grid-cols-3 gap-1 h-full bg-slate-100">
-            <img
-              src={product.images[0]}
-              alt={product.name}
-              loading="lazy"
-              className="w-full h-full object-cover col-span-2 group-hover:scale-105 transition-transform duration-500"
-            />
-            <div className="grid grid-rows-2 gap-1">
-              {product.images.slice(1).map((image) => (
-                <img
-                  key={image}
-                  src={image}
-                  alt={product.name}
-                  loading="lazy"
-                  className="w-full h-full object-cover"
-                />
-              ))}
-            </div>
-          </div>
-        ) : (
-          <img
-            src={product.image}
-            alt={product.name}
-            loading="lazy"
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-          />
-        )}
+      <Link
+        to={`/products/${product.id}`}
+        className="relative block h-72 bg-white"
+        aria-label={`View details for ${product.name}`}
+      >
+        <img
+          src={product.image}
+          alt={product.name}
+          loading="lazy"
+          className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
+        />
+        <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950/85 via-slate-950/45 to-transparent pt-16 px-5 pb-5">
+          <p className="text-white font-heading font-bold text-lg">{product.name}</p>
+          <span className="text-slate-200 text-xs">View product details</span>
+        </div>
         {product.badge && (
           <span className="absolute top-3 left-3 bg-amber-500 text-slate-900 text-xs font-bold px-3 py-1 rounded-full shadow-md">
             {product.badge}
@@ -48,61 +33,7 @@ export default function ProductCard({ product, index = 0 }) {
         <span className="absolute top-3 right-3 bg-white/90 backdrop-blur-sm text-slate-700 text-xs font-medium px-3 py-1 rounded-full">
           {product.category}
         </span>
-      </div>
-
-      <div className="p-6 flex flex-col flex-1">
-        <h3 className="font-heading font-bold text-slate-900 text-lg mb-2">
-          {product.name}
-        </h3>
-        <p className="text-sm text-slate-500 mb-4 line-clamp-2">
-          {product.description}
-        </p>
-
-        <div className="grid grid-cols-2 gap-3 mb-4 text-sm">
-          <div className="bg-slate-50 rounded-lg px-3 py-2">
-            <span className="text-slate-400 text-xs block">Capacity</span>
-            <span className="text-slate-700 font-semibold">
-              {product.capacity}
-            </span>
-          </div>
-          <div className="bg-slate-50 rounded-lg px-3 py-2">
-            <span className="text-slate-400 text-xs block">Power</span>
-            <span className="text-slate-700 font-semibold">
-              {product.power}
-            </span>
-          </div>
-        </div>
-
-        <ul className="space-y-1.5 mb-5">
-          {product.features.slice(0, 3).map((feature) => (
-            <li
-              key={feature}
-              className="flex items-center gap-2 text-sm text-slate-600"
-            >
-              <FaCheckCircle className="text-brick-600 text-xs flex-shrink-0" />
-              {feature}
-            </li>
-          ))}
-        </ul>
-
-        <div className="mt-auto flex items-center justify-between pt-4 border-t border-slate-100">
-          <div>
-            <span className="text-xs text-slate-400 block">
-              {product.price === 'Price on Request' ? 'Pricing' : 'Starting at'}
-            </span>
-            <span className="font-heading font-bold text-xl text-brick-700">
-              {product.price}
-            </span>
-          </div>
-          <Link
-            to="/contact"
-            className="inline-flex items-center gap-2 text-sm font-semibold text-brick-700 hover:text-brick-800 group/link"
-          >
-            Enquire
-            <FaArrowRight className="group-hover/link:translate-x-1 transition-transform" />
-          </Link>
-        </div>
-      </div>
+      </Link>
     </motion.div>
   );
 }

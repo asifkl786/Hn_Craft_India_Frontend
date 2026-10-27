@@ -9,6 +9,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
 import Products from './pages/Products';
+import ProductDetails from './pages/ProductDetails';
 import Gallery from './pages/Gallery';
 import Testimonials from './pages/Testimonials';
 import FAQ from './pages/FAQ';
@@ -28,6 +29,7 @@ export default function App() {
               <Route path="/about" element={<About />} />
               <Route path="/services" element={<Services />} />
               <Route path="/products" element={<Products />} />
+              <Route path="/products/:productId" element={<ProductDetails />} />
               <Route path="/gallery" element={<Gallery />} />
               <Route path="/testimonials" element={<Testimonials />} />
               <Route path="/faq" element={<FAQ />} />
