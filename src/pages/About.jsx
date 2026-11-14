@@ -66,72 +66,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* Company Story */}
-      <section className="py-20 bg-white">
-        <div className="container-page">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-            >
-              <span className="text-brick-600 font-semibold text-sm uppercase tracking-wider mb-3 block">
-                Our Story
-              </span>
-              <h2 className="font-heading font-bold text-3xl text-slate-900 mb-6 leading-tight">
-                From a Small Workshop to India's Trusted Brick Machine Manufacturer
-              </h2>
-              <div className="space-y-4 text-slate-600 leading-relaxed">
-                <p>
-                  Founded in 2009 by MH Qadri, Brick Machines Production
-                  started as a small workshop in Sambhal, Uttar Pradesh with a
-                  simple mission: to make quality brick-making machines
-                  accessible and affordable for Indian builders and rural
-                  entrepreneurs.
-                </p>
-                <p>
-                  Over the past 15+ years, we've grown from a local manufacturer
-                  to a trusted brand serving customers across 20+ states in
-                  India. Our machines have helped establish hundreds of
-                  brick-making businesses, from small rural setups to
-                  large-scale industrial plants.
-                </p>
-                <p>
-                  Today, under the brand name <strong>@hncraftindia</strong>,
-                  we continue to innovate, improve, and deliver machines that
-                  are built for Indian conditions — tough, reliable, and
-                  efficient. Every machine that leaves our factory carries our
-                  promise of quality and our commitment to our customers'
-                  success.
-                </p>
-              </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="grid grid-cols-2 gap-4"
-            >
-              <img
-                src="https://images.pexels.com/photos/27425952/pexels-photo-27425952.jpeg?auto=compress&cs=tinysrgb&h=500&w=400"
-                alt="Our factory"
-                className="rounded-2xl object-cover h-72 w-full"
-                loading="lazy"
-              />
-              <img
-                src="https://images.pexels.com/photos/14804699/pexels-photo-14804699.jpeg?auto=compress&cs=tinysrgb&h=500&w=400"
-                alt="Manufacturing facility"
-                className="rounded-2xl object-cover h-72 w-full mt-8"
-                loading="lazy"
-              />
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
       {/* Founder & Owner */}
       <section className="py-20 bg-slate-50">
         <div className="container-page">
@@ -224,6 +158,72 @@ export default function About() {
               >
                 <FaLinkedinIn /> Connect on LinkedIn
               </a>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Company Story */}
+      <section className="py-20 bg-white">
+        <div className="container-page">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+            >
+              <span className="text-brick-600 font-semibold text-sm uppercase tracking-wider mb-3 block">
+                Our Story
+              </span>
+              <h2 className="font-heading font-bold text-3xl text-slate-900 mb-6 leading-tight">
+                From a Small Workshop to India's Trusted Brick Machine Manufacturer
+              </h2>
+              <div className="space-y-4 text-slate-600 leading-relaxed">
+                <p>
+                  Founded in 2009 by MH Qadri, Brick Machines Production
+                  started as a small workshop in Sambhal, Uttar Pradesh with a
+                  simple mission: to make quality brick-making machines
+                  accessible and affordable for Indian builders and rural
+                  entrepreneurs.
+                </p>
+                <p>
+                  Over the past 15+ years, we've grown from a local manufacturer
+                  to a trusted brand serving customers across 20+ states in
+                  India. Our machines have helped establish hundreds of
+                  brick-making businesses, from small rural setups to
+                  large-scale industrial plants.
+                </p>
+                <p>
+                  Today, under the brand name <strong>@hncraftindia</strong>,
+                  we continue to innovate, improve, and deliver machines that
+                  are built for Indian conditions — tough, reliable, and
+                  efficient. Every machine that leaves our factory carries our
+                  promise of quality and our commitment to our customers'
+                  success.
+                </p>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="grid grid-cols-2 gap-4"
+            >
+              <img
+                src="https://images.pexels.com/photos/27425952/pexels-photo-27425952.jpeg?auto=compress&cs=tinysrgb&h=500&w=400"
+                alt="Our factory"
+                className="rounded-2xl object-cover h-72 w-full"
+                loading="lazy"
+              />
+              <img
+                src="https://images.pexels.com/photos/14804699/pexels-photo-14804699.jpeg?auto=compress&cs=tinysrgb&h=500&w=400"
+                alt="Manufacturing facility"
+                className="rounded-2xl object-cover h-72 w-full mt-8"
+                loading="lazy"
+              />
             </motion.div>
           </div>
         </div>
