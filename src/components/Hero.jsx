@@ -8,11 +8,11 @@ export default function Hero() {
       {/* Background image with overlay */}
       <div className="absolute inset-0">
         <img
-          src="https://images.pexels.com/photos/4395554/pexels-photo-4395554.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1920"
-          alt="Brick manufacturing facility"
-          className="w-full h-full object-cover"
+          src="/images/card.jpeg"
+          alt="H.N. Craft India product range and contact details"
+          className="w-full h-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/80 to-slate-900/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/88 to-slate-900/70" />
       </div>
 
       <div className="container-page relative z-10 pt-24 pb-12">
