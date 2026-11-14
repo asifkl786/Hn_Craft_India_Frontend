@@ -102,6 +102,14 @@ export default function Home() {
               <ProductCard key={product.id} product={product} index={index} />
             ))}
           </div>
+          <div className="mt-12 rounded-2xl bg-white shadow-lg overflow-hidden">
+            <img
+              src="/images/card.jpeg"
+              alt="H.N. Craft India product range and contact details"
+              loading="lazy"
+              className="w-full h-auto object-contain"
+            />
+          </div>
           <div className="text-center mt-10">
             <Link to="/products" className="btn-primary">
               View All Products <FaArrowRight />

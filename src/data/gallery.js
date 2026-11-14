@@ -1,5 +1,12 @@
 export const galleryItems = [
   {
+    id: 13,
+    category: 'Company Profile',
+    title: 'H.N. Craft India – Product Range & Contact',
+    image: '/images/card.jpeg',
+    fit: 'contain',
+  },
+  {
     id: 1,
     category: 'Machines',
     title: 'HN Craft Industrial Mixer – Front View',
@@ -61,4 +68,4 @@ export const galleryItems = [
   },
 ];
 
-export const galleryCategories = ['All', 'Machines'];
+export const galleryCategories = ['All', 'Company Profile', 'Machines'];
