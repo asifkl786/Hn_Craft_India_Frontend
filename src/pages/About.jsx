@@ -48,26 +48,8 @@ export default function About() {
         <meta name="description" content="Learn about Brick Machines Production - India's trusted brick machine manufacturer with 15+ years of experience. Our story, mission, vision, and team." />
       </Helmet>
 
-      {/* Page Header */}
-      <section className="pt-28 pb-12 bg-slate-900">
-        <div className="container-page text-center">
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="font-heading font-bold text-white text-4xl sm:text-5xl mb-4"
-          >
-            About Us
-          </motion.h1>
-          <p className="text-slate-300 max-w-2xl mx-auto">
-            Empowering Indian builders and entrepreneurs with reliable,
-            high-performance brick-making machines since 2009.
-          </p>
-        </div>
-      </section>
-
       {/* Founder & Owner */}
-      <section className="py-20 bg-slate-50">
+      <section className="pt-32 pb-20 bg-slate-50">
         <div className="container-page">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 items-center">
             <motion.div
@@ -82,7 +64,7 @@ export default function About() {
                 <img
                   src="/images/MH_QADRI.jpeg"
                   alt="MH Qadri - Founder & Owner"
-                  className="relative rounded-2xl object-cover h-[460px] w-full shadow-xl"
+                  className="relative rounded-2xl h-auto w-full shadow-xl"
                 />
               </div>
             </motion.div>
